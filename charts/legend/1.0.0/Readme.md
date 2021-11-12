@@ -1,17 +1,13 @@
-[![FINOS - Incubating](https://cdn.jsdelivr.net/gh/finos/contrib-toolbox@master/images/badge-incubating.svg)](https://finosfoundation.atlassian.net/wiki/display/FINOS/Incubating)
-![website build](https://github.com/finos/legend-integration-helm/workflows/Docusaurus-website-build/badge.svg)
+# Helm Chart for Legend with remote instance of Gitlab
 
-# Legend Integration Helm
+This repo contains helm chart to deploy Legend Studio.
 
-This intergration is a helm chart to deploy Legend Studio to Kubernetes.
-
-## Installation
-
-Kubernetes CNCF Cluster <=1.16 (K3s/RKE/RKE2):
+Requirements:
+- CNCF Kubernetes Cluster (RKE2/K3s/RKE)
 
 1. Clone Helm Chart Repo
 ```
-git clone --depth 1 https://github.com/finos/legend-integration-helm.git
+git clone --depth 1 https://github.com/naeemarsalan/legend
 ```
 
 2. Gitlab OAuth config setup
@@ -57,7 +53,7 @@ https://{DNS Hostname}/studio/log.in/callback
 
 Create Ingress TLS Secret
 ```
-kubectl create secret tls tls-legend --cert=fullchain.pem  --key=key.pem
+kubectl create secret tls tls-legend --cert=fullchain.pem  --key=key.pem -n legend
 ```
 
 Install helm chart
@@ -72,15 +68,3 @@ helm install legend ./legend/installers/helm/ --set env.LEGEND_HOST="{DNS Hostna
 ```
 
 Browse to https://{DNS Hostname}/studio
-
-## Contributing
-
-To learn about contributing to Legend, see the [CONTRIBUTING.md](CONTRIBUTING.md) file or the ["contribute to Legend"](https://legend.finos.org/docs/getting-started/contribute-to-legend) section of the Legend documentation site.
-
-## License
-
-Copyright 2021 Suse
-
-Distributed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
-
-SPDX-License-Identifier: [Apache-2.0](https://spdx.org/licenses/Apache-2.0)
