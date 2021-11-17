@@ -1,5 +1,4 @@
 [![FINOS - Incubating](https://cdn.jsdelivr.net/gh/finos/contrib-toolbox@master/images/badge-incubating.svg)](https://finosfoundation.atlassian.net/wiki/display/FINOS/Incubating)
-![website build](https://github.com/finos/legend-integration-helm/workflows/Docusaurus-website-build/badge.svg)
 
 # Legend Integration Helm
 
@@ -71,7 +70,7 @@ helm install legend ./legend/installers/helm/ --set env.LEGEND_HOST="{DNS Hostna
                                               --create-namespace
 ```
 
-Browse to https://{DNS Hostname}/studio
+Browse to `https://{DNS Hostname}/studio`
 
 ## Contributing
 
