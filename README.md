@@ -1,4 +1,4 @@
-[![FINOS - Archived]([https://cdn.jsdelivr.net/gh/finos/contrib-toolbox@master/images/badge-incubating.svg](https://cdn.jsdelivr.net/gh/finos/contrib-toolbox@master/images/badge-archived.svg))]([https://finosfoundation.atlassian.net/wiki/display/FINOS/Incubating](https://community.finos.org/docs/governance/Software-Projects/stages/archived))
+[![FINOS - Archived](https://cdn.jsdelivr.net/gh/finos/contrib-toolbox@master/images/badge-archived.svg)](https://community.finos.org/docs/governance/Software-Projects/stages/archived)
 
 **NOTE!** This project is archived due to lack of activity; you can still consume this software, although not advised, as it's not been maintained since November 2021. If you're interested to restore activity on this repository, please email [help@finos.org](mailto:help@finos.org)
 
