@@ -16,21 +16,21 @@ clusterdns: "svc.cluster.local"
 
 sdlc:
   repository: "finos/legend-sdlc-server"
-  tag: "0.45.0"
+  tag: "0.70.1"
   port: "7070"
   type: ClusterIP
   pullPolicy: IfNotPresent
 
 engine:
   repository: "finos/legend-engine-server"
-  tag: "2.39.0"
+  tag: "2.58.1"
   port: "6060"
   type: ClusterIP
   pullPolicy: IfNotPresent
 
 studio:
   repository: "finos/legend-studio"
-  tag: "0.2.5"
+  tag: "4.1.0"
   port: "8080"
   type: ClusterIP
   pullPolicy: IfNotPresent
